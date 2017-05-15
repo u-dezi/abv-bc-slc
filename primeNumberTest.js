@@ -19,4 +19,24 @@ describe('toEqual', function() {
 	it('passes if showes 1 is not prime', function() {
 		expect(findPrime(1)).toEqual("Not a prime number");
     });
+	//test case 6
+	it('passes if showes 0 is not prime', function() {
+		expect(findPrime(0)).toEqual("Not a prime number");
+    });
+	//test case 7
+	it('passes if showes -30 is not prime', function() {
+		expect(findPrime(-30)).toEqual("Not a prime number");
+    });
+	//test case 8
+	it('passes if showes -789 is not prime', function() {
+		expect(findPrime(-789)).toEqual("Not a prime number");
+    });
+	//test case 9
+	it('passes if showes -89 is not prime', function() {
+		expect(findPrime(-89)).toEqual("Not a prime number");
+    });
+	 //test case 10
+	it('passes if computes prime of 2', function() {
+		expect(findPrime(2)).toEqual([2]);
+    });
 });
